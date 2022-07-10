@@ -8,17 +8,34 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".75*"/>
             <ColumnDefinition Width=".5*"/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*"/>
+
         </Grid.ColumnDefinitions>
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-     <StackPanel x:Name="Sidebar" Grid.Column="0" Grid.Row="1">
         
-    </StackPanel>
+        <Image Source="C:\Users\bavel\source\repos\Robot\Robot\Assets\logo.png" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10" />
+
+        <Label Grid.Row="0" Grid.Column="1" Content="Search:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        
+        <TextBox Grid.Column="2" Margin="5" Width="150" HorizontalAlignment="Left" />
+
+        <StackPanel x:Name="Sidebar" Grid.Column="0" Grid.Row="1">
+            <Label>Welcome</Label>
+            <Button>Dashboard</Button>
+            <Button>Stock Movements</Button>
+            <Button>Inventory</Button>
+            <Button>Despatch Diary</Button>
+            <Button>Decanting</Button>
+            <Button>Map</Button>
+            <Button>Reports</Button>
+        
+        </StackPanel>
     </Grid>
 
    
